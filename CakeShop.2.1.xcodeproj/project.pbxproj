@@ -1,0 +1,860 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CB20CC92EE0B6970043B308 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20CC82EE0B6970043B308 /* Order.swift */; };
+		7CB20CCB2EE0B6C20043B308 /* OrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20CCA2EE0B6C20043B308 /* OrderItem.swift */; };
+		7CB20CCD2EE0B6EF0043B308 /* StandartCakeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20CCC2EE0B6EF0043B308 /* StandartCakeOptions.swift */; };
+		7CB20CCF2EE0B70D0043B308 /* CustomCakeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB20CCE2EE0B70D0043B308 /* CustomCakeOptions.swift */; };
+		FD8422B72ED08FE50073AF10 /* CakeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422B62ED08FE50073AF10 /* CakeDetailVC.swift */; };
+		FD8422BA2ED1F6EB0073AF10 /* LikedManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422B92ED1F6EB0073AF10 /* LikedManager.swift */; };
+		FD8422BC2ED206EC0073AF10 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422BB2ED206EC0073AF10 /* MockData.swift */; };
+		FD8422BE2ED2253D0073AF10 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422BD2ED2253D0073AF10 /* EditProfileVC.swift */; };
+		FD8422C02ED344970073AF10 /* MapSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422BF2ED344970073AF10 /* MapSelectionVC.swift */; };
+		FD8422C22ED384AF0073AF10 /* AddressSettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422C12ED384AF0073AF10 /* AddressSettingsVC.swift */; };
+		FD8422C42ED38E850073AF10 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422C32ED38E850073AF10 /* CartManager.swift */; };
+		FD8422C62ED4321E0073AF10 /* AddToCartHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422C52ED4321E0073AF10 /* AddToCartHelper.swift */; };
+		FD8422C92ED45C030073AF10 /* CartItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8422C82ED45C030073AF10 /* CartItemCell.swift */; };
+		FD8CA4652ED9B98200B23429 /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CA4642ED9B98200B23429 /* CheckoutVC.swift */; };
+		FD8CA46F2ED9D1BF00B23429 /* CalendarPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CA4662ED9C48D00B23429 /* CalendarPopUpView.swift */; };
+		FD8CA4702ED9D1C700B23429 /* DataFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CA4682ED9CDB400B23429 /* DataFieldView.swift */; };
+		FD8CA4712ED9D1CC00B23429 /* CheckoutCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CA46B2ED9CE5800B23429 /* CheckoutCardView.swift */; };
+		FD8CA4722ED9D1D100B23429 /* TimeSlotButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CA46D2ED9CE8100B23429 /* TimeSlotButton.swift */; };
+		FD8CA4742ED9E33500B23429 /* IconTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CA4732ED9E33500B23429 /* IconTextField.swift */; };
+		FD8CA4762EDA1C0400B23429 /* AddressSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8CA4752EDA1C0300B23429 /* AddressSelectorVC.swift */; };
+		FDA7B0382ECB14B600512E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0372ECB14B600512E66 /* AppDelegate.swift */; };
+		FDA7B0412ECB14C200512E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA7B0402ECB14C200512E66 /* Assets.xcassets */; };
+		FDA7B0442ECB14C200512E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDA7B0422ECB14C200512E66 /* LaunchScreen.storyboard */; };
+		FDA7B04F2ECB14C300512E66 /* CakeShop_2_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B04E2ECB14C300512E66 /* CakeShop_2_1Tests.swift */; };
+		FDA7B0592ECB14C300512E66 /* CakeShop_2_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0582ECB14C300512E66 /* CakeShop_2_1UITests.swift */; };
+		FDA7B05B2ECB14C300512E66 /* CakeShop_2_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B05A2ECB14C300512E66 /* CakeShop_2_1UITestsLaunchTests.swift */; };
+		FDA7B0682ECB153000512E66 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0672ECB153000512E66 /* CustomTabBarController.swift */; };
+		FDA7B06A2ECB15D800512E66 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0692ECB15D800512E66 /* HomeVC.swift */; };
+		FDA7B06F2ECB160900512E66 /* BannerItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B06E2ECB160900512E66 /* BannerItem.swift */; };
+		FDA7B0712ECB163100512E66 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0702ECB163100512E66 /* CategoryItem.swift */; };
+		FDA7B0732ECB165500512E66 /* CakeItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0722ECB165500512E66 /* CakeItem.swift */; };
+		FDA7B0752ECB169B00512E66 /* BannerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0742ECB169B00512E66 /* BannerCell.swift */; };
+		FDA7B0772ECB16EC00512E66 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0762ECB16EC00512E66 /* CategoryCell.swift */; };
+		FDA7B0792ECB173300512E66 /* CakeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0782ECB173300512E66 /* CakeCell.swift */; };
+		FDA7B07B2ECB175B00512E66 /* SectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B07A2ECB175B00512E66 /* SectionHeaderView.swift */; };
+		FDA7B07F2ECB1A2200512E66 /* LikedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B07E2ECB1A2200512E66 /* LikedVC.swift */; };
+		FDA7B0812ECB1A2E00512E66 /* CartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0802ECB1A2E00512E66 /* CartVC.swift */; };
+		FDA7B0832ECB1A3E00512E66 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0822ECB1A3E00512E66 /* ProfileVC.swift */; };
+		FDA7B0852ECB297100512E66 /* CategoryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0842ECB297100512E66 /* CategoryHeaderView.swift */; };
+		FDA7B0882ECB62A800512E66 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0872ECB62A800512E66 /* Extensions.swift */; };
+		FDA7B08A2ECB7CBE00512E66 /* ContactSheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA7B0892ECB7CBE00512E66 /* ContactSheetVC.swift */; };
+		FDAEB7D82ED615550001D2BD /* CartLineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAEB7D72ED615550001D2BD /* CartLineItem.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDA7B04B2ECB14C300512E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA7B02C2ECB14B600512E66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA7B0332ECB14B600512E66;
+			remoteInfo = CakeShop.2.1;
+		};
+		FDA7B0552ECB14C300512E66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDA7B02C2ECB14B600512E66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDA7B0332ECB14B600512E66;
+			remoteInfo = CakeShop.2.1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CB20CC82EE0B6970043B308 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		7CB20CCA2EE0B6C20043B308 /* OrderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderItem.swift; sourceTree = "<group>"; };
+		7CB20CCC2EE0B6EF0043B308 /* StandartCakeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandartCakeOptions.swift; sourceTree = "<group>"; };
+		7CB20CCE2EE0B70D0043B308 /* CustomCakeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCakeOptions.swift; sourceTree = "<group>"; };
+		FD8422B62ED08FE50073AF10 /* CakeDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeDetailVC.swift; sourceTree = "<group>"; };
+		FD8422B92ED1F6EB0073AF10 /* LikedManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedManager.swift; sourceTree = "<group>"; };
+		FD8422BB2ED206EC0073AF10 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		FD8422BD2ED2253D0073AF10 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		FD8422BF2ED344970073AF10 /* MapSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSelectionVC.swift; sourceTree = "<group>"; };
+		FD8422C12ED384AF0073AF10 /* AddressSettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSettingsVC.swift; sourceTree = "<group>"; };
+		FD8422C32ED38E850073AF10 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		FD8422C52ED4321E0073AF10 /* AddToCartHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToCartHelper.swift; sourceTree = "<group>"; };
+		FD8422C82ED45C030073AF10 /* CartItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemCell.swift; sourceTree = "<group>"; };
+		FD8CA4642ED9B98200B23429 /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
+		FD8CA4662ED9C48D00B23429 /* CalendarPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPopUpView.swift; sourceTree = "<group>"; usesTabs = 0; };
+		FD8CA4682ED9CDB400B23429 /* DataFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFieldView.swift; sourceTree = "<group>"; };
+		FD8CA46B2ED9CE5800B23429 /* CheckoutCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutCardView.swift; sourceTree = "<group>"; };
+		FD8CA46D2ED9CE8100B23429 /* TimeSlotButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSlotButton.swift; sourceTree = "<group>"; };
+		FD8CA4732ED9E33500B23429 /* IconTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconTextField.swift; sourceTree = "<group>"; };
+		FD8CA4752EDA1C0300B23429 /* AddressSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSelectorVC.swift; sourceTree = "<group>"; };
+		FDA7B0342ECB14B600512E66 /* CakeShop.2.1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CakeShop.2.1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA7B0372ECB14B600512E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FDA7B0402ECB14C200512E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FDA7B0432ECB14C200512E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FDA7B0452ECB14C200512E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDA7B04A2ECB14C300512E66 /* CakeShop.2.1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeShop.2.1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA7B04E2ECB14C300512E66 /* CakeShop_2_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeShop_2_1Tests.swift; sourceTree = "<group>"; };
+		FDA7B0542ECB14C300512E66 /* CakeShop.2.1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CakeShop.2.1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA7B0582ECB14C300512E66 /* CakeShop_2_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeShop_2_1UITests.swift; sourceTree = "<group>"; };
+		FDA7B05A2ECB14C300512E66 /* CakeShop_2_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeShop_2_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDA7B0672ECB153000512E66 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		FDA7B0692ECB15D800512E66 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FDA7B06E2ECB160900512E66 /* BannerItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerItem.swift; sourceTree = "<group>"; };
+		FDA7B0702ECB163100512E66 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
+		FDA7B0722ECB165500512E66 /* CakeItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeItem.swift; sourceTree = "<group>"; };
+		FDA7B0742ECB169B00512E66 /* BannerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerCell.swift; sourceTree = "<group>"; };
+		FDA7B0762ECB16EC00512E66 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		FDA7B0782ECB173300512E66 /* CakeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeCell.swift; sourceTree = "<group>"; };
+		FDA7B07A2ECB175B00512E66 /* SectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeaderView.swift; sourceTree = "<group>"; };
+		FDA7B07E2ECB1A2200512E66 /* LikedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedVC.swift; sourceTree = "<group>"; };
+		FDA7B0802ECB1A2E00512E66 /* CartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartVC.swift; sourceTree = "<group>"; };
+		FDA7B0822ECB1A3E00512E66 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		FDA7B0842ECB297100512E66 /* CategoryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryHeaderView.swift; sourceTree = "<group>"; };
+		FDA7B0872ECB62A800512E66 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FDA7B0892ECB7CBE00512E66 /* ContactSheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactSheetVC.swift; sourceTree = "<group>"; };
+		FDAEB7D72ED615550001D2BD /* CartLineItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartLineItem.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDA7B0312ECB14B600512E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA7B0472ECB14C300512E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA7B0512ECB14C300512E66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CB20CC52EE0B65F0043B308 /* OrderModels */ = {
+			isa = PBXGroup;
+			children = (
+				7CB20CC82EE0B6970043B308 /* Order.swift */,
+				7CB20CCA2EE0B6C20043B308 /* OrderItem.swift */,
+				7CB20CCC2EE0B6EF0043B308 /* StandartCakeOptions.swift */,
+				7CB20CCE2EE0B70D0043B308 /* CustomCakeOptions.swift */,
+			);
+			path = OrderModels;
+			sourceTree = "<group>";
+		};
+		FD8422B52ED08FC50073AF10 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				FD8CA46A2ED9CE1700B23429 /* CartCheckout */,
+				FD8422BD2ED2253D0073AF10 /* EditProfileVC.swift */,
+				FD8422BF2ED344970073AF10 /* MapSelectionVC.swift */,
+				FD8422C12ED384AF0073AF10 /* AddressSettingsVC.swift */,
+			);
+			path = HelperViews;
+			sourceTree = "<group>";
+		};
+		FD8422B82ED1F6CC0073AF10 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FD8422B92ED1F6EB0073AF10 /* LikedManager.swift */,
+				FD8422BB2ED206EC0073AF10 /* MockData.swift */,
+				FD8422C32ED38E850073AF10 /* CartManager.swift */,
+				FDAEB7D72ED615550001D2BD /* CartLineItem.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FD8422C72ED45BF40073AF10 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				FD8422C82ED45C030073AF10 /* CartItemCell.swift */,
+			);
+			path = TVC;
+			sourceTree = "<group>";
+		};
+		FD8CA4602ED9B90D00B23429 /* HomeVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0692ECB15D800512E66 /* HomeVC.swift */,
+				FD8422B62ED08FE50073AF10 /* CakeDetailVC.swift */,
+				FDA7B0892ECB7CBE00512E66 /* ContactSheetVC.swift */,
+				FDA7B07A2ECB175B00512E66 /* SectionHeaderView.swift */,
+				FDA7B0842ECB297100512E66 /* CategoryHeaderView.swift */,
+			);
+			path = HomeVC;
+			sourceTree = "<group>";
+		};
+		FD8CA4612ED9B93400B23429 /* LikedVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B07E2ECB1A2200512E66 /* LikedVC.swift */,
+			);
+			path = LikedVC;
+			sourceTree = "<group>";
+		};
+		FD8CA4622ED9B94000B23429 /* CartVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0802ECB1A2E00512E66 /* CartVC.swift */,
+				FD8CA4642ED9B98200B23429 /* CheckoutVC.swift */,
+			);
+			path = CartVC;
+			sourceTree = "<group>";
+		};
+		FD8CA4632ED9B94F00B23429 /* ProfileVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0822ECB1A3E00512E66 /* ProfileVC.swift */,
+			);
+			path = ProfileVC;
+			sourceTree = "<group>";
+		};
+		FD8CA46A2ED9CE1700B23429 /* CartCheckout */ = {
+			isa = PBXGroup;
+			children = (
+				FD8CA4662ED9C48D00B23429 /* CalendarPopUpView.swift */,
+				FD8CA4682ED9CDB400B23429 /* DataFieldView.swift */,
+				FD8CA46B2ED9CE5800B23429 /* CheckoutCardView.swift */,
+				FD8CA46D2ED9CE8100B23429 /* TimeSlotButton.swift */,
+				FD8CA4732ED9E33500B23429 /* IconTextField.swift */,
+				FD8CA4752EDA1C0300B23429 /* AddressSelectorVC.swift */,
+			);
+			path = CartCheckout;
+			sourceTree = "<group>";
+		};
+		FDA7B02B2ECB14B600512E66 = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0362ECB14B600512E66 /* CakeShop.2.1 */,
+				FDA7B04D2ECB14C300512E66 /* CakeShop.2.1Tests */,
+				FDA7B0572ECB14C300512E66 /* CakeShop.2.1UITests */,
+				FDA7B0352ECB14B600512E66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDA7B0352ECB14B600512E66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0342ECB14B600512E66 /* CakeShop.2.1.app */,
+				FDA7B04A2ECB14C300512E66 /* CakeShop.2.1Tests.xctest */,
+				FDA7B0542ECB14C300512E66 /* CakeShop.2.1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDA7B0362ECB14B600512E66 /* CakeShop.2.1 */ = {
+			isa = PBXGroup;
+			children = (
+				FD8422B82ED1F6CC0073AF10 /* Managers */,
+				FDA7B06B2ECB15E000512E66 /* Models */,
+				FDA7B06C2ECB15EB00512E66 /* Views */,
+				FDA7B06D2ECB15F500512E66 /* Controllers */,
+				FDA7B0862ECB626300512E66 /* Helpers */,
+				FDA7B0372ECB14B600512E66 /* AppDelegate.swift */,
+				FDA7B0402ECB14C200512E66 /* Assets.xcassets */,
+				FDA7B0422ECB14C200512E66 /* LaunchScreen.storyboard */,
+				FDA7B0452ECB14C200512E66 /* Info.plist */,
+			);
+			path = CakeShop.2.1;
+			sourceTree = "<group>";
+		};
+		FDA7B04D2ECB14C300512E66 /* CakeShop.2.1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B04E2ECB14C300512E66 /* CakeShop_2_1Tests.swift */,
+			);
+			path = CakeShop.2.1Tests;
+			sourceTree = "<group>";
+		};
+		FDA7B0572ECB14C300512E66 /* CakeShop.2.1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0582ECB14C300512E66 /* CakeShop_2_1UITests.swift */,
+				FDA7B05A2ECB14C300512E66 /* CakeShop_2_1UITestsLaunchTests.swift */,
+			);
+			path = CakeShop.2.1UITests;
+			sourceTree = "<group>";
+		};
+		FDA7B06B2ECB15E000512E66 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CB20CC52EE0B65F0043B308 /* OrderModels */,
+				FDA7B06E2ECB160900512E66 /* BannerItem.swift */,
+				FDA7B0702ECB163100512E66 /* CategoryItem.swift */,
+				FDA7B0722ECB165500512E66 /* CakeItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDA7B06C2ECB15EB00512E66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FD8422C72ED45BF40073AF10 /* TVC */,
+				FDA7B07C2ECB19EC00512E66 /* CVC */,
+				FD8422B52ED08FC50073AF10 /* HelperViews */,
+				FDA7B07D2ECB19F800512E66 /* Core */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FDA7B06D2ECB15F500512E66 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0672ECB153000512E66 /* CustomTabBarController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FDA7B07C2ECB19EC00512E66 /* CVC */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0742ECB169B00512E66 /* BannerCell.swift */,
+				FDA7B0762ECB16EC00512E66 /* CategoryCell.swift */,
+				FDA7B0782ECB173300512E66 /* CakeCell.swift */,
+			);
+			path = CVC;
+			sourceTree = "<group>";
+		};
+		FDA7B07D2ECB19F800512E66 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				FD8CA4602ED9B90D00B23429 /* HomeVC */,
+				FD8CA4612ED9B93400B23429 /* LikedVC */,
+				FD8CA4622ED9B94000B23429 /* CartVC */,
+				FD8CA4632ED9B94F00B23429 /* ProfileVC */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		FDA7B0862ECB626300512E66 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FDA7B0872ECB62A800512E66 /* Extensions.swift */,
+				FD8422C52ED4321E0073AF10 /* AddToCartHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDA7B0332ECB14B600512E66 /* CakeShop.2.1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA7B05E2ECB14C300512E66 /* Build configuration list for PBXNativeTarget "CakeShop.2.1" */;
+			buildPhases = (
+				FDA7B0302ECB14B600512E66 /* Sources */,
+				FDA7B0312ECB14B600512E66 /* Frameworks */,
+				FDA7B0322ECB14B600512E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CakeShop.2.1;
+			productName = CakeShop.2.1;
+			productReference = FDA7B0342ECB14B600512E66 /* CakeShop.2.1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDA7B0492ECB14C300512E66 /* CakeShop.2.1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA7B0612ECB14C300512E66 /* Build configuration list for PBXNativeTarget "CakeShop.2.1Tests" */;
+			buildPhases = (
+				FDA7B0462ECB14C300512E66 /* Sources */,
+				FDA7B0472ECB14C300512E66 /* Frameworks */,
+				FDA7B0482ECB14C300512E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA7B04C2ECB14C300512E66 /* PBXTargetDependency */,
+			);
+			name = CakeShop.2.1Tests;
+			productName = CakeShop.2.1Tests;
+			productReference = FDA7B04A2ECB14C300512E66 /* CakeShop.2.1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FDA7B0532ECB14C300512E66 /* CakeShop.2.1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDA7B0642ECB14C300512E66 /* Build configuration list for PBXNativeTarget "CakeShop.2.1UITests" */;
+			buildPhases = (
+				FDA7B0502ECB14C300512E66 /* Sources */,
+				FDA7B0512ECB14C300512E66 /* Frameworks */,
+				FDA7B0522ECB14C300512E66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDA7B0562ECB14C300512E66 /* PBXTargetDependency */,
+			);
+			name = CakeShop.2.1UITests;
+			productName = CakeShop.2.1UITests;
+			productReference = FDA7B0542ECB14C300512E66 /* CakeShop.2.1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDA7B02C2ECB14B600512E66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					FDA7B0332ECB14B600512E66 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					FDA7B0492ECB14C300512E66 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FDA7B0332ECB14B600512E66;
+					};
+					FDA7B0532ECB14C300512E66 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = FDA7B0332ECB14B600512E66;
+					};
+				};
+			};
+			buildConfigurationList = FDA7B02F2ECB14B600512E66 /* Build configuration list for PBXProject "CakeShop.2.1" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FDA7B02B2ECB14B600512E66;
+			productRefGroup = FDA7B0352ECB14B600512E66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDA7B0332ECB14B600512E66 /* CakeShop.2.1 */,
+				FDA7B0492ECB14C300512E66 /* CakeShop.2.1Tests */,
+				FDA7B0532ECB14C300512E66 /* CakeShop.2.1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDA7B0322ECB14B600512E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA7B0442ECB14C200512E66 /* LaunchScreen.storyboard in Resources */,
+				FDA7B0412ECB14C200512E66 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA7B0482ECB14C300512E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA7B0522ECB14C300512E66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDA7B0302ECB14B600512E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD8CA4762EDA1C0400B23429 /* AddressSelectorVC.swift in Sources */,
+				FD8CA4742ED9E33500B23429 /* IconTextField.swift in Sources */,
+				FDAEB7D82ED615550001D2BD /* CartLineItem.swift in Sources */,
+				7CB20CCD2EE0B6EF0043B308 /* StandartCakeOptions.swift in Sources */,
+				FDA7B0752ECB169B00512E66 /* BannerCell.swift in Sources */,
+				FD8CA46F2ED9D1BF00B23429 /* CalendarPopUpView.swift in Sources */,
+				FDA7B0732ECB165500512E66 /* CakeItem.swift in Sources */,
+				FD8CA4652ED9B98200B23429 /* CheckoutVC.swift in Sources */,
+				FD8CA4722ED9D1D100B23429 /* TimeSlotButton.swift in Sources */,
+				FD8422C92ED45C030073AF10 /* CartItemCell.swift in Sources */,
+				FDA7B0812ECB1A2E00512E66 /* CartVC.swift in Sources */,
+				FD8422BA2ED1F6EB0073AF10 /* LikedManager.swift in Sources */,
+				FDA7B0792ECB173300512E66 /* CakeCell.swift in Sources */,
+				FDA7B06F2ECB160900512E66 /* BannerItem.swift in Sources */,
+				FD8422C22ED384AF0073AF10 /* AddressSettingsVC.swift in Sources */,
+				FDA7B0772ECB16EC00512E66 /* CategoryCell.swift in Sources */,
+				FD8CA4702ED9D1C700B23429 /* DataFieldView.swift in Sources */,
+				FDA7B0682ECB153000512E66 /* CustomTabBarController.swift in Sources */,
+				FD8422BC2ED206EC0073AF10 /* MockData.swift in Sources */,
+				FD8422C42ED38E850073AF10 /* CartManager.swift in Sources */,
+				FDA7B0852ECB297100512E66 /* CategoryHeaderView.swift in Sources */,
+				FD8422BE2ED2253D0073AF10 /* EditProfileVC.swift in Sources */,
+				FDA7B0382ECB14B600512E66 /* AppDelegate.swift in Sources */,
+				FD8422C62ED4321E0073AF10 /* AddToCartHelper.swift in Sources */,
+				FD8422B72ED08FE50073AF10 /* CakeDetailVC.swift in Sources */,
+				FDA7B0832ECB1A3E00512E66 /* ProfileVC.swift in Sources */,
+				FDA7B0882ECB62A800512E66 /* Extensions.swift in Sources */,
+				7CB20CC92EE0B6970043B308 /* Order.swift in Sources */,
+				7CB20CCF2EE0B70D0043B308 /* CustomCakeOptions.swift in Sources */,
+				FD8422C02ED344970073AF10 /* MapSelectionVC.swift in Sources */,
+				7CB20CCB2EE0B6C20043B308 /* OrderItem.swift in Sources */,
+				FDA7B07B2ECB175B00512E66 /* SectionHeaderView.swift in Sources */,
+				FDA7B07F2ECB1A2200512E66 /* LikedVC.swift in Sources */,
+				FDA7B08A2ECB7CBE00512E66 /* ContactSheetVC.swift in Sources */,
+				FD8CA4712ED9D1CC00B23429 /* CheckoutCardView.swift in Sources */,
+				FDA7B0712ECB163100512E66 /* CategoryItem.swift in Sources */,
+				FDA7B06A2ECB15D800512E66 /* HomeVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA7B0462ECB14C300512E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA7B04F2ECB14C300512E66 /* CakeShop_2_1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDA7B0502ECB14C300512E66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDA7B0592ECB14C300512E66 /* CakeShop_2_1UITests.swift in Sources */,
+				FDA7B05B2ECB14C300512E66 /* CakeShop_2_1UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDA7B04C2ECB14C300512E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA7B0332ECB14B600512E66 /* CakeShop.2.1 */;
+			targetProxy = FDA7B04B2ECB14C300512E66 /* PBXContainerItemProxy */;
+		};
+		FDA7B0562ECB14C300512E66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDA7B0332ECB14B600512E66 /* CakeShop.2.1 */;
+			targetProxy = FDA7B0552ECB14C300512E66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDA7B0422ECB14C200512E66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDA7B0432ECB14C200512E66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDA7B05C2ECB14C300512E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FDA7B05D2ECB14C300512E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDA7B05F2ECB14C300512E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DK3KGMSC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CakeShop.2.1/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0016197.CakeShop-2-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FDA7B0602ECB14C300512E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DK3KGMSC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CakeShop.2.1/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0016197.CakeShop-2-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FDA7B0622ECB14C300512E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DK3KGMSC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0016197.CakeShop-2-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeShop.2.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CakeShop.2.1";
+			};
+			name = Debug;
+		};
+		FDA7B0632ECB14C300512E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DK3KGMSC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0016197.CakeShop-2-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CakeShop.2.1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CakeShop.2.1";
+			};
+			name = Release;
+		};
+		FDA7B0652ECB14C300512E66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DK3KGMSC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0016197.CakeShop-2-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CakeShop.2.1;
+			};
+			name = Debug;
+		};
+		FDA7B0662ECB14C300512E66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DK3KGMSC2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-0016197.CakeShop-2-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CakeShop.2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDA7B02F2ECB14B600512E66 /* Build configuration list for PBXProject "CakeShop.2.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA7B05C2ECB14C300512E66 /* Debug */,
+				FDA7B05D2ECB14C300512E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA7B05E2ECB14C300512E66 /* Build configuration list for PBXNativeTarget "CakeShop.2.1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA7B05F2ECB14C300512E66 /* Debug */,
+				FDA7B0602ECB14C300512E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA7B0612ECB14C300512E66 /* Build configuration list for PBXNativeTarget "CakeShop.2.1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA7B0622ECB14C300512E66 /* Debug */,
+				FDA7B0632ECB14C300512E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDA7B0642ECB14C300512E66 /* Build configuration list for PBXNativeTarget "CakeShop.2.1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDA7B0652ECB14C300512E66 /* Debug */,
+				FDA7B0662ECB14C300512E66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDA7B02C2ECB14B600512E66 /* Project object */;
+}
